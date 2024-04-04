@@ -5,43 +5,43 @@
 <code>#install CDK
 sudo npm install -g aws-cdk-lib<code>
  
-#create an app folder and go there
+<code>#create an app folder and go there
 mkdir cdk-app
-cd cdk-app/
+cd cdk-app/</code>
  
-#initialize the app
+<code>#initialize the app
 cdk init app --language <language>
 #verify if it works
-cdk ls
+cdk ls</code>
  
-#copy the content of sample cdk-app-stack.js into lib/cdk-app-stack.js
+<code>#copy the content of sample cdk-app-stack.js into lib/cdk-app-stack.js
 cd lib/ #go to the lib/ directory
 rm cdk-app-stack.js #delete it
 touch cdk-app-stack.js #to create a new file
-nano cdk-app-stack.js #edit it
+nano cdk-app-stack.js #edit it</code>
  
-#sample cdk-app-stack.js, copy the contents and save
+<code>#sample cdk-app-stack.js, copy the contents and save</code>
  
-#setup Lambda function
+<code>#setup Lambda function
 cd ..
 mkdir lambda && cd lambda
-touch index.py
+touch index.py</code>
 
-#Paste the contentes of lambda/index.py
+<code>#Paste the contentes of lambda/index.py</code>
 
-#bootsrap the CDK application
+<code>#bootsrap the CDK application
 cd .. #go up to run the cdk.json
-cdk bootstrap #you will do once per account per region
+cdk bootstrap #you will do once per account per region</code>
 
-#Check CloudFormation to check the progress
+<code>#Check CloudFormation to check the progress</code>
 
-#sythesize to get the target CloudFormation template that is going to be generated out of our stack.
+<code>#sythesize to get the target CloudFormation template that is going to be generated out of our stack.
 #this will be sent to CloudFormation and we can preview it
-cdk syth
+cdk syth</code>
 
-#deploy the CDK stack
-cdk deploy
+<code>#deploy the CDK stack
+cdk deploy</code>
 
-#empty s3 bucket
+<code>#empty s3 bucket
 #destroy the stack
 cdk destroy</code>
