@@ -2,7 +2,7 @@
 # Structure: cdk-app/
 <i>Codes while practicing AWS CDK. This one will install the CDK on CloudShell.</i>
 
-`#install CDK
+<code>#install CDK
 sudo npm install -g aws-cdk-lib
  
 #create an app folder and go there
@@ -44,4 +44,4 @@ cdk deploy
 
 #empty s3 bucket
 #destroy the stack
-cdk destroy`
+cdk destroy</code>
