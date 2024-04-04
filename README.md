@@ -3,7 +3,7 @@
 <i>Codes while practicing AWS CDK. This one will install the CDK on CloudShell.</i>
 
 <code>#install CDK
-sudo npm install -g aws-cdk-lib<code>
+sudo npm install -g aws-cdk-lib</code>
  
 <code>#create an app folder and go there
 mkdir cdk-app
